@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import Header from './header';
 import { Global, css } from '@emotion/react';
 
 const Layout = ({children}) => {
@@ -54,6 +55,7 @@ const Layout = ({children}) => {
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"  integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
                 <link href="https://fonts.googleapis.com/css?family=Lato300,400,700|Roboto:400,700&display=swap" rel="stylesheet" />
             </Helmet>
+            <Header />
             {children}
         </>
     );
